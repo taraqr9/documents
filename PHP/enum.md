@@ -47,22 +47,18 @@ OUTPUT
 
 ONE
 
-********* This will print all value inside class.
+********* This will print name, not value.
 -->
 ```
 
-\*\*\* get reverse value
+\*\*\* This will print all value inside class.
 
 ```shell
 @foreach(\App\Enums\ClassName::cases() as $blood)
     <option value="{{$blood->value}}">{{$blood->name}}</option>
  @endforeach
 
-<-- 
-OUTPUT
-
-ONE
-
+<--
 ********* This will also return the same array.
 -->
 ```
